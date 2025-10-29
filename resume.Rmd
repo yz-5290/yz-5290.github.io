@@ -1,0 +1,31 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Education
+**University of California, Santa Barbara (UCSB)**  
+B.S. in Pharmacology, Minor in Statistical Science (Expected 2025)
+
+# Experience
+**Intern – Shanghai Changning District CDC** (Summer 2025)  
+- Analyzed epidemiological data to identify regional health trends.  
+- Collaborated with researchers on surveillance data management.
+
+**Research Assistant – Montell Lab, UCSB** (2023–Present)  
+- Assisted with Drosophila sensory behavior experiments.  
+- Managed data cleaning and exploratory analysis in R.
+
+# Skills
+- R (tidyverse, ggplot2, plotly, dplyr)
+- Data visualization & statistical analysis
+- Research writing and scientific presentation
+
+# Contact
+*[Email] yz5290@cumc.columbia.edu 
+*[GitHub](https://github.com/yz-5290)  
+*[LinkedIn](https://linkedin.com/in/yue-zhao-8461a52b9)

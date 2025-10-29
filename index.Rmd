@@ -1,0 +1,22 @@
+---
+title: "Fantastic Baby"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Hi, I'm Yue Zhao
+
+Welcome to my personal website!  
+I'm a fourth-year pharmacology major at UCSB interested in **epidemiology**.  
+I enjoy using data to explore questions in biology and public health.
+
+#This is my resume
+[resume](resume.html)
+
+# Contact
+*[Email] yz5290@cumc.columbia.edu 
+*[GitHub](https://github.com/yz-5290)  
+*[LinkedIn](https://linkedin.com/in/yue-zhao-8461a52b9)
