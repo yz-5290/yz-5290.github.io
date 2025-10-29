@@ -17,6 +17,6 @@ I enjoy using data to explore questions in biology and public health.
 [resume](resume.html)
 
 # Contact
-*[Email] yz5290@cumc.columbia.edu 
+*[Email](yz5290@cumc.columbia.edu)
 *[GitHub](https://github.com/yz-5290)  
 *[LinkedIn](https://linkedin.com/in/yue-zhao-8461a52b9)
