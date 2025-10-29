@@ -1,5 +1,5 @@
 ---
-title: "NY NOAA Dashboard"
+title: "NY NOAA weather Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
