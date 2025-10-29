@@ -1,0 +1,73 @@
+---
+title: "p2plotly"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data("ny_noaa")
+weather_df = ny_noaa |>
+  drop_na(tmax, tmin, prcp) |>
+  mutate(
+    year = year(date),
+    month = month(date, label = TRUE)
+  )|>
+  sample_n(1000)
+```
+---------------------------------------------------
+
+### Chart A
+
+```{r}
+weather_df |>
+  count(month) |>
+  mutate(month = fct_reorder(month, n)) |>
+  plot_ly(
+    x = ~month,
+    y = ~n,
+    color = ~month,
+    type = "bar",
+    colors = "viridis"
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+weather_df |>
+  mutate(month = fct_reorder(month, tmax)) |>
+  plot_ly(
+    y = ~tmax,
+    color = ~month,
+    type = "box",
+    colors = "viridis"
+  )
+```
+
+### Chart C
+
+```{r}
+weather_df |>
+  mutate(text_label = str_c("Date: ", date, "\nMin: ", tmin, "°C\nMax: ", tmax, "°C")) |>
+  plot_ly(
+    x = ~tmin,
+    y = ~tmax,
+    type = "scatter",
+    mode = "markers",
+    color = ~tmax,
+    text = ~text_label,
+    alpha = 0.5
+  )
+
+
+```
+
+
